@@ -1,10 +1,14 @@
 import React from "react";
 import closeIcon from "../../assets/img/close-icon.svg";
 import { Field, reduxForm } from "redux-form";
+import { useDispatch } from "react-redux";
+import { newPlacesData } from "../../redux/actions/places";
 
-const AddPopup = ({ newPlacesData, openAddPopup, addPopup }) => {
+export const AddPopup = ({ openAddPopup, addPopup }) => {
+  const dispatch = useDispatch();
+
   let newPlacesDataLocal = (value) => {
-    newPlacesData(value.newPlace, value.newLink);
+    dispatch(newPlacesData(value.newPlace, value.newLink));
     openAddPopup();
   };
   return (
@@ -57,5 +61,3 @@ const AddPlacesForm = (props) => {
 const AddPlacesFormRedux = reduxForm({
   form: "addPlacesForm",
 })(AddPlacesForm);
-
-export default AddPopup;

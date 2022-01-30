@@ -1,7 +1,9 @@
 import React from "react";
-import ImgPopup from "../../Popup/ImgPopup";
+import { useDispatch } from "react-redux";
+import { removePlacesItem } from "../../../redux/actions/places";
+import { ImgPopup } from "../../Popup/ImgPopup";
 
-const PlacesItem = (props) => {
+export const PlacesItem = ({ id, name, link }) => {
   const [popupImg, setPopup] = React.useState(false);
 
   let openPopupImg = () => {
@@ -13,20 +15,22 @@ const PlacesItem = (props) => {
     setLike(!like);
   };
 
+  const dispatch = useDispatch();
+
   let removeItem = () => {
-    props.removePlacesItem(props.id);
+    dispatch(removePlacesItem(id));
   };
 
   return (
     <div className="places__item">
       <img
         onClick={openPopupImg}
-        src={props.link}
+        src={link}
         alt=""
         className="places__item-img"
       />
       <div className="places__data">
-        <h2 className="places__item-title">{props.name}</h2>
+        <h2 className="places__item-title">{name}</h2>
         <button
           onClick={likeToggle}
           type="button"
@@ -40,12 +44,10 @@ const PlacesItem = (props) => {
       />
       <ImgPopup
         imgPopup={popupImg}
-        link={props.link}
-        name={props.name}
+        link={link}
+        name={name}
         openImagePopup={openPopupImg}
       />
     </div>
   );
 };
-
-export default PlacesItem;

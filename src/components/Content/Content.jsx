@@ -1,14 +1,12 @@
 import React from "react";
-import PlacesContainer from "./Places/PlacesContainer";
-import ProfileContainer from "./Profile/ProfileContainer";
+import { Profile } from "./Profile/Profile";
+import { Places } from "./Places/Places";
 
-const Content = () => {
+export const Content = () => {
   return (
     <main className="main wrapper">
-      <ProfileContainer />
-      <PlacesContainer />
+      <Profile />
+      <Places />
     </main>
   );
 };
-
-export default Content;

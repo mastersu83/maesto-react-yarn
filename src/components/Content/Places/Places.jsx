@@ -1,17 +1,13 @@
 import React from "react";
-import PlacesItem from "./PlacesItem";
+import { PlacesItem } from "./PlacesItem";
+import { useSelector } from "react-redux";
+import { getPlacesItem } from "../../../redux/selectors/places_selectors";
 
-const Places = (props) => {
-  let placesItem = props.places.items.map((i, index) => (
-    <PlacesItem
-      items={props.places.items}
-      removePlacesItem={props.removePlacesItem}
-      index={index}
-      id={i.id}
-      key={i.id}
-      name={i.name}
-      link={i.link}
-    />
+export const Places = () => {
+  const items = useSelector(getPlacesItem);
+
+  let placesItem = items.map((i) => (
+    <PlacesItem id={i.id} key={i.id} name={i.name} link={i.link} />
   ));
   return (
     <section className="places container">
@@ -19,5 +15,3 @@ const Places = (props) => {
     </section>
   );
 };
-
-export default Places;

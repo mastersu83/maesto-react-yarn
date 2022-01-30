@@ -1,7 +1,7 @@
 import React from "react";
 import closeIcon from "../../assets/img/close-icon.svg";
 
-const ImgPopup = (props) => {
+export const ImgPopup = (props) => {
   return (
     <div className={`popup${props.imgPopup ? " open" : ""}`}>
       <div className="popup__body">
@@ -20,5 +20,3 @@ const ImgPopup = (props) => {
     </div>
   );
 };
-
-export default ImgPopup;
