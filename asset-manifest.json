@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/maesto-react-yarn/static/css/main.ea586d7d.chunk.css",
+    "main.js": "/maesto-react-yarn/static/js/main.b7459cee.chunk.js",
+    "main.js.map": "/maesto-react-yarn/static/js/main.b7459cee.chunk.js.map",
+    "runtime-main.js": "/maesto-react-yarn/static/js/runtime-main.107381ab.js",
+    "runtime-main.js.map": "/maesto-react-yarn/static/js/runtime-main.107381ab.js.map",
+    "static/js/2.343c5ba4.chunk.js": "/maesto-react-yarn/static/js/2.343c5ba4.chunk.js",
+    "static/js/2.343c5ba4.chunk.js.map": "/maesto-react-yarn/static/js/2.343c5ba4.chunk.js.map",
+    "static/js/3.0f2bf895.chunk.js": "/maesto-react-yarn/static/js/3.0f2bf895.chunk.js",
+    "static/js/3.0f2bf895.chunk.js.map": "/maesto-react-yarn/static/js/3.0f2bf895.chunk.js.map",
+    "index.html": "/maesto-react-yarn/index.html",
+    "static/css/main.ea586d7d.chunk.css.map": "/maesto-react-yarn/static/css/main.ea586d7d.chunk.css.map",
+    "static/js/2.343c5ba4.chunk.js.LICENSE.txt": "/maesto-react-yarn/static/js/2.343c5ba4.chunk.js.LICENSE.txt",
+    "static/media/Avatar.727b5baa.png": "/maesto-react-yarn/static/media/Avatar.727b5baa.png",
+    "static/media/App.css": "/maesto-react-yarn/static/media/like.0bc60938.svg",
+    "static/media/add-btn.54b14265.svg": "/maesto-react-yarn/static/media/add-btn.54b14265.svg",
+    "static/media/close-icon.a004a2d5.svg": "/maesto-react-yarn/static/media/close-icon.a004a2d5.svg",
+    "static/media/edit-btn.a1892ea7.svg": "/maesto-react-yarn/static/media/edit-btn.a1892ea7.svg",
+    "static/media/logo.03b78ada.svg": "/maesto-react-yarn/static/media/logo.03b78ada.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.107381ab.js",
+    "static/js/2.343c5ba4.chunk.js",
+    "static/css/main.ea586d7d.chunk.css",
+    "static/js/main.b7459cee.chunk.js"
+  ]
+}
